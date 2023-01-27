@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.75fr 2fr 0.75fr;
+    grid-template-rows: 0.35fr 1.5fr 0.35fr;
+}
+
+.child {
+    background-color: yellow;
+    border: 3px solid rgb(231, 231, 6);
+    margin: .25em;
+    border-radius: 4px;
+    padding: 2em;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.child:hover {
+    background-color: aquamarine;
+    border: 3px solid rgb(102, 204, 170);
+    padding-left: 3em;
+}
+
+#nav {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#header {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#footer {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
